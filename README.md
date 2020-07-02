@@ -2,6 +2,10 @@
 
 A casual game about using a TV set to pickle eyeballs.
 
+![](https://img.itch.zone/aW1nLzM3NzY2NDQuZ2lm/180x143%23c/JOl%2FQn.gif)
+
+You can [play it on itch.io](https://zstojanovic.itch.io/hypnoteyes).
+
 ### Controls
 - arrow keys move the TV
 - M toggles music (not the sounds, though)
