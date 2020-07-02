@@ -14,4 +14,5 @@ You can [play it on itch.io](https://zstojanovic.itch.io/hypnoteyes).
 ### Credits
 - backgrounds and graphics inspiration by [Kenney](https://kenney.nl/)
 - music: [Pondering the Cosmos](https://opengameart.org/content/ruskerdax-pondering-the-cosmos-0) by Ruskerdax
+- bottle break sound by [spookymodem](https://opengameart.org/users/spookymodem)
 - font: Evil Empire by [Tup Wanders](https://tupwanders.nl)

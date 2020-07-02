@@ -43,7 +43,7 @@ public class GameScreen extends ScreenAdapter implements Helpers {
 
   private Sound collectEyeSound = Gdx.audio.newSound(Gdx.files.internal("rise01.mp3"));
   private Sound squashEyeSound = Gdx.audio.newSound(Gdx.files.internal("toyrubberlizardsqueezesqueak.mp3"));
-  private Sound recordScratch = Gdx.audio.newSound(Gdx.files.internal("recordscratch.mp3"));
+  private Sound crashSound = Gdx.audio.newSound(Gdx.files.internal("bottle-break.mp3"));
 
   private PolygonSpriteBatch batch = new PolygonSpriteBatch();
   private ShapeRenderer boundsRenderer = new ShapeRenderer();
@@ -242,7 +242,7 @@ public class GameScreen extends ScreenAdapter implements Helpers {
   private void failedWithCrash() {
     status = Status.FAILED_WITH_CRASH;
     Hypnoteyes.music.pause();
-    recordScratch.play();
+    crashSound.play();
     message = crashMessages.remove(0);
     crashMessages.add(message);
     message += "\n\nPress Enter to try again";
