@@ -138,6 +138,7 @@ public class GameScreen extends ScreenAdapter implements Helpers {
 
     Gdx.input.setInputProcessor(new InputHandler());
     boundsRenderer.setProjectionMatrix(camera.combined);
+    Hypnoteyes.music.play();
     startLevel(preferences.getInteger("currentLevelIndex", 0));
   }
 
@@ -157,7 +158,6 @@ public class GameScreen extends ScreenAdapter implements Helpers {
       new Vector2(jarLocation.x+0.58f, jarLocation.y+1.72f), new Vector2(jarLocation.x-0.58f, jarLocation.y+1.72f)});
     createBounds();
 
-    Hypnoteyes.music.play();
     collectedEyeCount = 0;
     elapsedTime = 0;
     status = Status.RUNNING;
@@ -241,7 +241,6 @@ public class GameScreen extends ScreenAdapter implements Helpers {
 
   private void failedWithCrash() {
     status = Status.FAILED_WITH_CRASH;
-    Hypnoteyes.music.pause();
     crashSound.play();
     message = crashMessages.remove(0);
     crashMessages.add(message);
